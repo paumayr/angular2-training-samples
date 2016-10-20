@@ -39,6 +39,10 @@
         main: '../buttonclick.js',
         defaultExtension: 'js'
       },
+      repeatingelements: {
+        main: '../repeatingelements.js',
+        defaultExtension: 'js'
+      },
       rxjs: {
         defaultExtension: 'js'
       },
