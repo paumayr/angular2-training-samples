@@ -25,24 +25,16 @@
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
     },
+    
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
-      gettingstarted: {
-        main: '../gettingstarted.js',
-        defaultExtension: 'js'
-      },
-      displayingdata: {
-        main: '../displayingdata.js',
-        defaultExtension: 'js'
-      },
-      buttonclick: {
-        main: '../buttonclick.js',
-        defaultExtension: 'js'
-      },
-      repeatingelements: {
-        main: '../repeatingelements.js',
-        defaultExtension: 'js'
-      },
+      gettingstarted: { main: '../gettingstarted.js', defaultExtension: 'js' },
+      displayingdata: { main: '../displayingdata.js', defaultExtension: 'js' },
+      buttonclick: { main: '../buttonclick.js', defaultExtension: 'js' },
+      repeatingelements: { main: '../repeatingelements.js', defaultExtension: 'js' },
+      showif: { main: '../showif.js', defaultExtension: 'js' },
+      textinput: { main: '../textinput.js', defaultExtension: 'js' },
+      modelbinding: { main: '../modelbinding.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
