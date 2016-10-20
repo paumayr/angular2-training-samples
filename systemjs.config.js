@@ -35,6 +35,8 @@
       showif: { main: '../showif.js', defaultExtension: 'js' },
       textinput: { main: '../textinput.js', defaultExtension: 'js' },
       modelbinding: { main: '../modelbinding.js', defaultExtension: 'js' },
+      fruitbasket: { main: '../fruitbasket.js', defaultExtension: 'js' },
+      service: { main: '../service.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
