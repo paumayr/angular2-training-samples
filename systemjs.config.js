@@ -31,6 +31,14 @@
         main: '../gettingstarted.js',
         defaultExtension: 'js'
       },
+      displayingdata: {
+        main: '../displayingdata.js',
+        defaultExtension: 'js'
+      },
+      buttonclick: {
+        main: '../buttonclick.js',
+        defaultExtension: 'js'
+      },
       rxjs: {
         defaultExtension: 'js'
       },
