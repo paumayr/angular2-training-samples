@@ -38,6 +38,7 @@
       fruitbasket: { main: '../fruitbasket.js', defaultExtension: 'js' },
       service: { main: '../service.js', defaultExtension: 'js' },
       valueinjection: { main: '../valueinjection.js', defaultExtension: 'js' },
+      multivalueinjection: { main: '../multivalueinjection.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
