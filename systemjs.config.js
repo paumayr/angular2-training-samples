@@ -41,6 +41,7 @@
       multivalueinjection: { main: '../multivalueinjection.js', defaultExtension: 'js' },
       inputbindings: { main: '../inputbindings.js', defaultExtension: 'js' },
       outputbindings: { main: '../outputbindings.js', defaultExtension: 'js' },
+      stylebindings: { main: '../stylebindings.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
