@@ -1,0 +1,12 @@
+<div>
+    <name-editor *ngIf="selected" 
+            [first]="selected.first"
+            [last]="selected.last"
+            (onSave)="updateSelected($event)"></name-editor>
+    <ul>
+        <li (click)="selected = name" 
+            *ngFor="let name of names">
+            <span>{{name.last}}, {{name.first}}</span>
+        </li>
+    </ul>
+</div>

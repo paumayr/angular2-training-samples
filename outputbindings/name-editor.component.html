@@ -1,0 +1,12 @@
+<div>
+    <label>First:</label>
+    <input type="text"
+           [value]="first"
+           (keypress)="first = $event.target.value" />
+    <label>Last:</label>
+    <input type="text"
+            [value]="last"
+           (keypress)="last = $event.target.value" />
+
+    <button (click)="save()">Save</button>
+</div>

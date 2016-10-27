@@ -40,6 +40,7 @@
       valueinjection: { main: '../valueinjection.js', defaultExtension: 'js' },
       multivalueinjection: { main: '../multivalueinjection.js', defaultExtension: 'js' },
       inputbindings: { main: '../inputbindings.js', defaultExtension: 'js' },
+      outputbindings: { main: '../outputbindings.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },

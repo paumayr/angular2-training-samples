@@ -1,0 +1,13 @@
+
+body {
+    margin: 20px;
+}
+
+.tbd, .tbd a {
+    color: red;
+    font-size: xx-large
+}
+
+.tbd a:before{
+    content: "TBD:"
+}
