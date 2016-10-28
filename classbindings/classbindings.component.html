@@ -1,0 +1,24 @@
+<div>
+    <h1>CSS Class Bindings</h1>
+
+    <style>
+        div.rect {
+            width: 100px;
+            height: 100px;
+        }
+        .even {
+            background-color: yellow;
+            color: green;
+        }
+
+        .odd {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <div class="rect" 
+        [class.even]="value % 2 == 0"
+         [class.odd]="value % 2 == 1">{{value}}</div>
+
+    <button (click)="increment()">+</button>
+</div>

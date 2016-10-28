@@ -42,6 +42,7 @@
       inputbindings: { main: '../inputbindings.js', defaultExtension: 'js' },
       outputbindings: { main: '../outputbindings.js', defaultExtension: 'js' },
       stylebindings: { main: '../stylebindings.js', defaultExtension: 'js' },
+      classbindings: { main: '../classbindings.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
