@@ -44,6 +44,7 @@
       stylebindings: { main: '../stylebindings.js', defaultExtension: 'js' },
       classbindings: { main: '../classbindings.js', defaultExtension: 'js' },
       switching: { main: '../switching.js', defaultExtension: 'js' },
+      pipes: { main: '../pipes.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },

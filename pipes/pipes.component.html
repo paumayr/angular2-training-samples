@@ -1,0 +1,16 @@
+<div>
+    <h1>Date Pipe</h1>
+
+    <div>now: {{ now | date }}</div>
+
+    <div>now (short date): {{ now | date:'short' }}</div>
+    <div>now (medium date): {{ now | date:'medium' }}</div>
+    <div>now (fullDate date): {{ now | date:'fullDate' }}</div>
+
+    <h1>Currency Pipe</h1>
+
+    <div>currency: {{ 123 | currency }}</div>
+
+    <div>currency, symbol, max 2 digits: {{ 123.12567 | currency: 'EUR': true: '1.2-2' }}</div>
+
+</div>
