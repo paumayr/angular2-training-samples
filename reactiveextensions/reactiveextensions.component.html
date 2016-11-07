@@ -1,0 +1,19 @@
+<div>
+    <h1>Reactive Extensions</h1>
+
+    <h1>Timer</h1>
+
+    <span *ngFor="let time of timerEvents">{{time}}</span>
+    
+    <div>
+        <button (click)="startTimer()">Start</button>
+    </div>
+    <h1>Debounce</h1>
+
+    <label>Text Field</label>
+    <input type="text" (keypress)="search($event.target.value)" />
+
+    <div>
+        SearchTerm: {{searchTerm}}
+    </div>
+</div>
