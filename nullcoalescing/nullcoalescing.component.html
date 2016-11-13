@@ -1,0 +1,13 @@
+<div>
+    <h1>Null Coalescing Operator</h1>
+
+    <div>
+        Selected Person: {{selectedPerson?.first}} {{selectedPerson?.last}}
+    </div>
+
+    <div>
+        <ul *ngFor="let person of people">
+            <li (click)="select(person)">{{person.first}} {{person.last}}</li>
+        </ul>
+    </div>
+</div>

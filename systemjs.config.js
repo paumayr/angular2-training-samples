@@ -47,7 +47,8 @@
       pipes: { main: '../pipes.js', defaultExtension: 'js' },
       reactiveextensions: { main: '../reactiveextensions.js', defaultExtension: 'js' },
       templatereferencevariables: { main: '../templatereferencevariables.js', defaultExtension: 'js' },
-      custompipes: { main: '../custompipes.js', defaultExtension: 'js' }, 
+      custompipes: { main: '../custompipes.js', defaultExtension: 'js' },
+      nullcoalescing: { main: '../nullcoalescing.js', defaultExtension: 'js' }, 
       rxjs: {
         defaultExtension: 'js'
       },
