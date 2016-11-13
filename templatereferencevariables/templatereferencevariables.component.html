@@ -1,0 +1,15 @@
+<div>
+    <h1>Template Reference Variables</h1>
+
+    <div>
+        <label>Hash variant</label>
+        <input type="text" #inputField />
+        <button (click)="showMessage(inputField.value)">Show Alert</button>
+    </div>
+
+    <div>
+        <label>Canonical variant</label>
+        <input type="text" ref-inputField2 />
+        <button (click)="showMessage(inputField2.value)">Show Alert 2</button>
+    </div>
+</div>

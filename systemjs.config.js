@@ -46,6 +46,7 @@
       switching: { main: '../switching.js', defaultExtension: 'js' },
       pipes: { main: '../pipes.js', defaultExtension: 'js' },
       reactiveextensions: { main: '../reactiveextensions.js', defaultExtension: 'js' },
+      templatereferencevariables: { main: '../templatereferencevariables.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
