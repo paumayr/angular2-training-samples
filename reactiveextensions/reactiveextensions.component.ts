@@ -1,5 +1,5 @@
 
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 import {Observable, Subject} from 'rxjs/Rx';
 
@@ -21,10 +21,14 @@ export class ReactiveExtensionsComponent {
     private debounce = new Subject<string>();
     public searchTerm = '';
     constructor() {
-        this.debounce.debounceTime(2000).subscribe(x => this.searchTerm = x);
+        this.debounce.debounceTime(2000).subscribe(x => {
+            console.log("updating searchterm: " + x);
+            this.searchTerm = x;
+        });
     }
     
     search(term) {
+        console.log("sending term " + term)
         this.debounce.next(term);
     }
 }
