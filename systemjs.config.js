@@ -48,7 +48,9 @@
       reactiveextensions: { main: '../reactiveextensions.js', defaultExtension: 'js' },
       templatereferencevariables: { main: '../templatereferencevariables.js', defaultExtension: 'js' },
       custompipes: { main: '../custompipes.js', defaultExtension: 'js' },
-      nullcoalescing: { main: '../nullcoalescing.js', defaultExtension: 'js' }, 
+      nullcoalescing: { main: '../nullcoalescing.js', defaultExtension: 'js' },
+      factories: { main: '../factories.js', defaultExtension: 'js' },
+      formssample: { main: '../formssample.js', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },
