@@ -51,6 +51,7 @@
       nullcoalescing: { main: '../nullcoalescing.js', defaultExtension: 'js' },
       factories: { main: '../factories.js', defaultExtension: 'js' },
       formssample: { main: '../formssample.js', defaultExtension: 'js'},
+      customdirective: { main: '../customdirective.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },
