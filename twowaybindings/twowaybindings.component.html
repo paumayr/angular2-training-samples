@@ -2,6 +2,14 @@
     <h1>Two Way Bindings</h1>
 
     <my-custom [(amount)]="myamount"></my-custom>
+    <!-- equal to -->
+    <my-custom [amount]="myamount"
+               (amountChange)="myamount = $event"></my-custom>
+
 
     <div>myamount = {{myamount}}</div>
 </div>
+
+
+
+
