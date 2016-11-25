@@ -52,6 +52,7 @@
       factories: { main: '../factories.js', defaultExtension: 'js' },
       formssample: { main: '../formssample.js', defaultExtension: 'js'},
       customdirective: { main: '../customdirective.js', defaultExtension: 'js' },
+      twowaybindings: { main: '../twowaybindings.js', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },

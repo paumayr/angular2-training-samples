@@ -6,9 +6,15 @@ import { Component } from "@angular/core";
 })
 export class ClassBindingsComponent
 {
-    public value = 0;
+    public directClasses = "even";
+    public toggleDirectClasses() {
+        this.directClasses = this.directClasses == "even" ? "odd" : "even";
+    }
 
+    public value = 0;
     public increment() {
         this.value++;
     }
 }
+
+

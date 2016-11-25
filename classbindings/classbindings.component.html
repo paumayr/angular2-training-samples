@@ -15,10 +15,24 @@
             background-color: blue;
             color: white;
         }
+
+        .vert-tab {
+            height: 40px;
+        }
     </style>
+
+    
     <div class="rect" 
         [class.even]="value % 2 == 0"
          [class.odd]="value % 2 == 1">{{value}}</div>
 
     <button (click)="increment()">+</button>
+
+    <div class="vert-tab"></div>
+
+    <!-- rect class is ignored, overwritten by directClasses -->
+    <div class="rect"
+        [class]="directClasses"> Directly Set </div>
+
+    <button (click)="toggleDirectClasses()">Toggle</button>
 </div>
