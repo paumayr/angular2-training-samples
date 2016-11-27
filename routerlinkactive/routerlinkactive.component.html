@@ -1,0 +1,27 @@
+<div>
+    <h1>Router Link Active</h1>
+    <style>
+        a {
+            background: white;
+            color: gray;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+
+        a.active-link {
+            background: gray;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+    </style>
+
+    <div>
+        <a routerLink="fruits" routerLinkActive="active-link">Fruits</a>
+        <a routerLink="orders" routerLinkActive="active-link">Orders</a>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { RouterModule, Route } from '@angular/router';
 import { RoutingBasicsComponent }   from './routingbasics.component';
 import { FruitsComponent } from './fruits.component';
@@ -21,6 +22,7 @@ var routes : Route[] = [
     FruitsComponent,
     OrdersComponent
   ],
-  bootstrap:    [ RoutingBasicsComponent ]
+  bootstrap:    [ RoutingBasicsComponent ],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}]
 })
 export class RoutingBasicsModule { }
