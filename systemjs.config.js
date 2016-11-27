@@ -53,6 +53,7 @@
       formssample: { main: '../formssample.js', defaultExtension: 'js'},
       customdirective: { main: '../customdirective.js', defaultExtension: 'js' },
       twowaybindings: { main: '../twowaybindings.js', defaultExtension: 'js'},
+      routingbasics: { main: '../routingbasics.js', defaultExtension: 'js' },
       rxjs: {
         defaultExtension: 'js'
       },

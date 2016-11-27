@@ -4,3 +4,14 @@
     <div *ngIf="value % 2 == 1">It is odd</div>
     <button (click)="increment()">Increment</button>
 </div>
+
+<!-- Below shows structural transformations performed by angular2 -->
+<!-- All 3 perform the same thing -->
+<div *ngIf="value % 3 == 0">Dividable by 3</div>
+
+<div template="ngIf:value % 3 == 0">Dividable by 3</div>
+
+<template [ngIf]="value % 3 == 0">
+    <div>Dividable by 3</div>
+</template>
+

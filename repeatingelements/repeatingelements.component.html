@@ -4,4 +4,17 @@
     <ul>
         <li *ngFor="let fruit of fruits; let i = index; let first = first;let last = last">{{fruit}} - position {{i}} - first {{first}} - last {{last}}</li>
     </ul>
+
+<!-- Below shows the transformation on * directives performed by angular2 -->
+<!--    <ul>
+        <li *ngFor="let fruit of fruits">{{fruit}}</li>
+
+        <li template="ngFor let fruit of fruits">{{fruit}}</li>
+
+        <template ngFor let-fruit [ngForOf]="fruits">
+            <li>{{fruit}}</li>
+        </template>
+    </ul>
+    -->
 </div>
+

@@ -2,7 +2,8 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
     selector: "my-custom",
-    templateUrl: "./mycustom.component.html"
+    templateUrl: "./mycustom.component.html",
+    styleUrls: ["./mycustom.component.css"]
 })
 export class MyCustomComponent {
 
@@ -19,3 +20,5 @@ export class MyCustomComponent {
         this.amountChange.emit(this.amount);
     } 
 }
+
+
