@@ -55,6 +55,7 @@
       twowaybindings: { main: '../twowaybindings.js', defaultExtension: 'js'},
       routingbasics: { main: '../routingbasics.js', defaultExtension: 'js' },
       routerlinkactive: { main: '../routerlinkactive.js', defaultExtension: 'js'},
+      routeparameters: { main: '../routeparameters.js', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },
