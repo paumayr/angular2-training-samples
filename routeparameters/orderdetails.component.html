@@ -6,4 +6,7 @@
     <div>Date ordered: {{ order.dateOrdered | date: 'short' }}</div>
     <div>Date delivered: {{ order.dateDelivered | date: 'short' }}</div>
     <div>Amount due: {{ order.amountDue }}</div>
+
+
+    <a [routerLink]="['..']">Back</a>
 </div>

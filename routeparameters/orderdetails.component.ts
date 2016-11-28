@@ -8,13 +8,13 @@ import { getOrders, Order } from "./orders";
 export class OrderDetailsComponent {
     public order: Order = null;
     constructor(activatedRoute : ActivatedRoute) {
-        // var orderId = activatedRoute.snapshot.params["id"];
-        // fetchOrder(orderId);
+        var orderId = activatedRoute.snapshot.params["id"];
+        fetchOrder(orderId);
 
         // Uncomment to update to changing route parameter
-        activatedRoute.params.subscribe(params => {
-            this.fetchOrder(params["id"]);
-        });
+        // activatedRoute.params.subscribe(params => {
+        //     this.fetchOrder(params["id"]);
+        // });
     }
 
     private fetchOrder(orderId : string) {

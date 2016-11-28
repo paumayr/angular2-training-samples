@@ -11,12 +11,12 @@ export class MyCustomComponent {
     @Output() amountChange = new EventEmitter<number>();
 
     incrementAmount() {
-        this.amount += 50.0;
+        this.amount += 1.0;
         this.amountChange.emit(this.amount);
     }
 
     decrementAmount() {
-        this.amount -= 50.0;
+        this.amount -= 1.0;
         this.amountChange.emit(this.amount);
     } 
 }

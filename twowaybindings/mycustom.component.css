@@ -3,3 +3,6 @@ button {
     border: red solid 1px;
 }
 
+div.my-custom-component-border {
+    border: black solid 2px;
+}
