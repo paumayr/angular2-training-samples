@@ -23,6 +23,5 @@ export class OutputBindingsComponent {
     updateSelected($event : { first: string, last: string }) {
         this.selected.first = $event.first;
         this.selected.last = $event.last;
-        //this.names = this.names.slice(0);
     }
 }

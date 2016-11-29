@@ -1,0 +1,11 @@
+<h1>Divs below are only added for specific roles</h1>
+
+<input type="text" [value]="roles" (change)="updateRoles($event.target.value)">
+
+<div *onlyFor="'admin'">
+    This div requires role 'admin'
+</div>
+
+<div *onlyFor="'superuser'">
+    This div requires role 'superuser'
+</div>

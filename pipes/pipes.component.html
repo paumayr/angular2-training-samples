@@ -10,7 +10,9 @@
     <h1>Currency Pipe</h1>
 
     <div>currency: {{ 123 | currency }}</div>
+    <div>currency: {{ -123 | currency }}</div>
 
     <div>currency, symbol, max 2 digits: {{ 123.12567 | currency: 'EUR': true: '1.2-2' }}</div>
+    <div>currency, symbol, max 2 digits: {{ -123.12567 | currency: 'EUR': true: '1.2-2' }}</div>
 
 </div>

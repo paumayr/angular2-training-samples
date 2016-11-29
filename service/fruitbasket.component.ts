@@ -10,7 +10,7 @@ export class FruitBasketComponent {
     public fruits : string[];
     public fruitName = "";
 
-    constructor(private fruitCartService : FruitCartService) {
+    constructor(private fruitCartService: FruitCartService) {
         this.fruits = this.fruitCartService.fruits;
     }
 

@@ -7,7 +7,11 @@ import { ClickWobbleDirective } from "./clickwobble.directive";
 
 @NgModule({
     imports: [BrowserModule],
-    declarations: [CustomDirectiveComponent, ClickWobbleDirective ],
+    declarations: [
+        CustomDirectiveComponent, 
+        ClickWobbleDirective 
+    ],
     bootstrap: [CustomDirectiveComponent]
 })
 export class CustomDirectiveModule {}
+

@@ -57,6 +57,7 @@
       routerlinkactive: { main: '../routerlinkactive.js', defaultExtension: 'js'},
       routeparameters: { main: '../routeparameters.js', defaultExtension: 'js'},
       lifecycleevents: { main: '../lifecycleevents.js', defaultExtension: 'js'},
+      customstructuraldirective: { main: '../customstructuraldirective', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },

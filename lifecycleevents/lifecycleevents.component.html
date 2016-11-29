@@ -1,7 +1,9 @@
 <div>
     <button (click)="show = !show">Toggle</button>
 
+    <input type="text" value="phil" (input)="name = $event.target.value">
+
     <div *ngIf="show">
-        <noisy-comp [firstName]="'Philipp' + ' Aumayr'"></noisy-comp>
+        <noisy-comp [firstName]="name"></noisy-comp>
     </div>
 </div>
