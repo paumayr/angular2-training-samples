@@ -1,0 +1,18 @@
+<div>
+    <button [disabled]="isLoading"
+            (click)="fetchJunkies()">Reload</button>
+            
+    <div *ngIf="isLoading">
+        Loading...
+    </div>
+    <table *ngIf="junkies">
+        <tbody>
+            <tr *ngFor="let junkie of junkies">
+                <td>{{junkie.id}}</td>
+                <td>{{junkie.name}}</td>
+                <td>{{junkie.balance}}</td>
+                <td>{{junkie.consumptions}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

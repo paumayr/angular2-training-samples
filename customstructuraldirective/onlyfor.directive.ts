@@ -7,19 +7,19 @@ import { Subscription } from "rxjs";
 })
 export class OnlyForDirective implements OnDestroy {
 
+    private rolesUpdatedSubscription : Subscription;
     constructor(private userService : UserService,
               private templateRef: TemplateRef<any>,
               private viewContainer: ViewContainerRef) {
+        this.rolesUpdatedSubscription = this.userService
+                .rolesChange
+                .subscribe(roles => this.updateContent(this._roleName, roles));
     }
 
-    private rolesUpdatedSubscription : Subscription;
     private _roleName : string;
     private created = false;
     @Input() set onlyFor(roleName : string) {
         this._roleName = roleName;
-        this.rolesUpdatedSubscription = this.userService
-                                            .rolesChange
-                                            .subscribe(roles => this.updateContent(this._roleName, roles));
         this.updateContent(this._roleName, this.userService.roles);
     }
 

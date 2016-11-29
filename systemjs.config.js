@@ -58,6 +58,7 @@
       routeparameters: { main: '../routeparameters.js', defaultExtension: 'js'},
       lifecycleevents: { main: '../lifecycleevents.js', defaultExtension: 'js'},
       customstructuraldirective: { main: '../customstructuraldirective', defaultExtension: 'js'},
+      httpget: { main: '../httpget', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },

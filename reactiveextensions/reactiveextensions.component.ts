@@ -1,7 +1,5 @@
-
-import { Component, Input } from "@angular/core";
-
-import {Observable, Subject} from 'rxjs/Rx';
+import { Component, Input, OnDestroy } from "@angular/core";
+import {Observable, Subject, Subscription} from 'rxjs/Rx';
 
 @Component({
     selector: "reactive-extensions",
@@ -15,7 +13,15 @@ export class ReactiveExtensionsComponent {
     startTimer() {
         this.timer
             .take(10)
-            .subscribe(v => this.timerEvents.push(v));
+            .subscribe(v => this.timerEvents.push(v),
+                error => console.log('error!'),
+                () => console.log('completed!'));
+
+        var subscription = this.timer.take(10)
+                            .subscribe(v => console.log('next', v));
+
+        // later... for some reason...
+        subscription.unsubscribe();
     }
 
     private debounce = new Subject<string>();
