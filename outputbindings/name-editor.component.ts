@@ -9,7 +9,6 @@ export class NameEditorComponent {
     @Input() first: string = '';
     @Input() last: string = '';
 
-
     @Output() public onSave = new EventEmitter<{first: string, last: string}>();
 
     public save() {

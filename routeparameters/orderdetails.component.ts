@@ -9,7 +9,7 @@ export class OrderDetailsComponent {
     public order: Order = null;
     constructor(activatedRoute : ActivatedRoute) {
         var orderId = activatedRoute.snapshot.params["id"];
-        fetchOrder(orderId);
+        this.fetchOrder(orderId);
 
         // Uncomment to update to changing route parameter
         // activatedRoute.params.subscribe(params => {

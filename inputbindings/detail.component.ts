@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-
 import { Fruit } from "./fruit";
 
 @Component({
@@ -7,6 +6,6 @@ import { Fruit } from "./fruit";
     templateUrl: "./detail.component.html"
 })
 export class DetailComponent {
-
     @Input() fruit : Fruit;
 }
+

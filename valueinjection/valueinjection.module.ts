@@ -7,7 +7,8 @@ import { ValueInjectionComponent, CONNECTION_STRING }   from './valueinjection.c
   imports:      [ BrowserModule ],
   declarations: [ ValueInjectionComponent ],
   providers: [
-      { provide: CONNECTION_STRING, useValue: "http://the-magic-connection-string.com/path/to/odata/controller" }
+      { provide: CONNECTION_STRING, 
+        useValue: "http://the-magic-connection-string.com/path/to/odata/controller" }
   ],
   bootstrap:    [ ValueInjectionComponent ]
 })

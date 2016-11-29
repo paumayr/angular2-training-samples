@@ -1,0 +1,7 @@
+<div>
+    <button (click)="show = !show">Toggle</button>
+
+    <div *ngIf="show">
+        <noisy-comp [firstName]="'Philipp' + ' Aumayr'"></noisy-comp>
+    </div>
+</div>

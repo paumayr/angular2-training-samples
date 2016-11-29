@@ -56,6 +56,7 @@
       routingbasics: { main: '../routingbasics.js', defaultExtension: 'js' },
       routerlinkactive: { main: '../routerlinkactive.js', defaultExtension: 'js'},
       routeparameters: { main: '../routeparameters.js', defaultExtension: 'js'},
+      lifecycleevents: { main: '../lifecycleevents.js', defaultExtension: 'js'},
       rxjs: {
         defaultExtension: 'js'
       },
