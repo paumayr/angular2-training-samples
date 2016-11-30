@@ -9,6 +9,7 @@ export class ButtonClickComponent {
     public value = 42;
 
     increment() {
+        console.log("in increment");
         this.value++;
     }
 }

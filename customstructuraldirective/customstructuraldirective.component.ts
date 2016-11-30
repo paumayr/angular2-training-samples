@@ -7,19 +7,13 @@ import { Subscription } from "rxjs/Rx";
     selector:"custom-structural-directive",
     templateUrl: "./customstructuraldirective.component.html",
 })
-export class CustomStructuralDirectiveComponent implements OnDestroy{
-    private rolesChangedSubscription : Subscription;
+export class CustomStructuralDirectiveComponent{
     public roles: string = '';
 
     constructor(private userService : UserService) {
-        this.userService.rolesChange.subscribe(roles => this.roles = roles.join(' '));
     }
 
     updateRoles(roles : string) {
         this.userService.setRoles(roles.split(' '));
-    }
-
-    ngOnDestroy() {
-        this.rolesChangedSubscription.unsubscribe();
     }
 }

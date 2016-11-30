@@ -16,12 +16,6 @@ export class ReactiveExtensionsComponent {
             .subscribe(v => this.timerEvents.push(v),
                 error => console.log('error!'),
                 () => console.log('completed!'));
-
-        var subscription = this.timer.take(10)
-                            .subscribe(v => console.log('next', v));
-
-        // later... for some reason...
-        subscription.unsubscribe();
     }
 
     private debounce = new Subject<string>();

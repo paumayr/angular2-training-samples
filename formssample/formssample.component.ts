@@ -9,4 +9,11 @@ export class FormsSampleComponent {
     public user = {
         username: 'philipp'
     };
+
+    public availableRoles = ["user", "superuser", "admin"];
+    public role = this.availableRoles[0];
+
+    saveUser() {
+        console.log("saving user...");
+    }
 }

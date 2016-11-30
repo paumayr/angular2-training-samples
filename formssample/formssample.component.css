@@ -2,3 +2,7 @@
     color: red;
     font-size: small
 }
+
+div.input-control {
+    margin: 20px;
+}

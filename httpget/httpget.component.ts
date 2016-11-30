@@ -16,12 +16,9 @@ interface Junkie {
     templateUrl: "./httpget.component.html"
 })
 export class HttpGetComponent {
-
     public isLoading = false;
     public junkies : Junkie[] = null;
-
-    constructor(private http : Http) {
-    }
+    constructor(private http : Http) {}
 
     fetchJunkies() {
         this.isLoading = true;
